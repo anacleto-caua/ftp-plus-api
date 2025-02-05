@@ -44,6 +44,8 @@ def execute_command():
         #listar
         a_utils.send_msg(conn, "success", list_folder_files())
         print("-Lista de arquivos enviada.")
+        
+        return
 
     else: 
         filename = sanitize_filename(filename)
